@@ -1,0 +1,8 @@
+﻿"inlet_diameter"= 30
+"total_length"=200
+"outlet_length"=80
+"outlet_diameter"= 50
+"side_length"=115
+"inlet_lentgh"=80
+"flat_length"=120
+"side_height"=55

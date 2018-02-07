@@ -1,0 +1,5 @@
+﻿"thread_dist"= 3.5
+"thread_diameter"= 3
+"thread_length"=12
+"clip_diameter"= 110
+"clip_thickness"= 2
