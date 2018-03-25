@@ -1,0 +1,14 @@
+﻿"d_racor"= 11.8
+"h_alphasense"= 5
+"h_chamber"= 13
+"d_alphasense" = 32.4mm
+"d_chamber"= 19
+"h_base"= 25 - "h_chamber" - "h_alphasense"-1
+"d_thread_sck_hole"= 2.5
+"d_thread_sck_tap" = 2.05
+"length_thread"=10
+"clip_thread_hole" = 4
+"clip_thread_tap_drill" = 3.5
+"length_racor"= 10
+"d_pipe"=8
+"d_ring"=1.8
