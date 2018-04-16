@@ -1,0 +1,756 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:fab
+LIBS:I2C_ADC_attiny44-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AVRISPSMD M1
+U 1 1 5ACA3A4F
+P 7500 4100
+F 0 "M1" H 7250 4325 45  0000 L BNN
+F 1 "AVRISPSMD" H 7250 3800 45  0000 L BNN
+F 2 "FabOscar:fab-2X03SMD" H 7530 4250 20  0001 C CNN
+F 3 "" H 7500 4100 60  0001 C CNN
+	1    7500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP-US1206FAB C1
+U 1 1 5ACA3B21
+P 3500 2850
+F 0 "C1" H 3450 2975 45  0000 L BNN
+F 1 "1uF" H 3450 2650 45  0000 L BNN
+F 2 "FabOscar:fab_C1206FAB" H 3530 3000 20  0001 C CNN
+F 3 "" H 3500 2850 60  0001 C CNN
+	1    3500 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RESONATOR 20MHz1
+U 1 1 5ACA3B4C
+P 9400 4050
+F 0 "20MHz1" H 9200 4200 45  0000 L BNN
+F 1 "RESONATOR" H 9500 3750 45  0000 L BNN
+F 2 "FabOscar:fab-EFOBM" H 9430 4200 20  0001 C CNN
+F 3 "" H 9400 4050 60  0001 C CNN
+	1    9400 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7050 3950 0    60   Input ~ 0
+MISO
+Text GLabel 7000 4100 0    60   Input ~ 0
+SCK
+Text GLabel 7000 4250 0    60   Input ~ 0
+RST
+Text GLabel 8100 4100 2    60   Input ~ 0
+MOSI
+Text GLabel 8100 4250 2    60   Input ~ 0
+GND
+Text GLabel 3350 3050 0    60   Input ~ 0
+GND
+Text GLabel 8950 4050 0    60   Input ~ 0
+XTAL1
+Text GLabel 9900 4050 2    60   Input ~ 0
+XTAL2
+Text GLabel 6650 2050 2    60   Input ~ 0
+XTAL2
+Text GLabel 6650 2150 2    60   Input ~ 0
+XTAL1
+Text GLabel 9600 4500 2    60   Input ~ 0
+GND
+Text GLabel 6750 2650 2    60   Input ~ 0
+SCL
+Text GLabel 6750 2450 2    60   Input ~ 0
+SDA
+Text GLabel 7050 2550 2    60   Input ~ 0
+MISO
+Text GLabel 7050 2350 2    60   Input ~ 0
+MOSI
+Text GLabel 7100 2700 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	7700 4100 8100 4100
+Wire Wire Line
+	7700 4200 8050 4200
+Wire Wire Line
+	8050 4200 8050 4250
+Wire Wire Line
+	8050 4250 8100 4250
+Wire Wire Line
+	7400 4000 7100 4000
+Wire Wire Line
+	7100 4000 7100 3950
+Wire Wire Line
+	7100 3950 7050 3950
+Wire Wire Line
+	7400 4100 7000 4100
+Wire Wire Line
+	7400 4200 7100 4200
+Wire Wire Line
+	7100 4200 7100 4250
+Wire Wire Line
+	7100 4250 7000 4250
+Wire Wire Line
+	2300 2550 4200 2550
+Connection ~ 3500 2550
+Wire Wire Line
+	3350 3050 4200 3050
+Wire Wire Line
+	3500 2950 3500 3050
+Connection ~ 3500 3050
+Wire Wire Line
+	6500 2050 6650 2050
+Wire Wire Line
+	8950 4050 9100 4050
+Wire Wire Line
+	9700 4050 9900 4050
+Wire Wire Line
+	6500 2150 6650 2150
+Wire Wire Line
+	9400 4350 9400 4500
+Wire Wire Line
+	9400 4500 9600 4500
+Wire Wire Line
+	6500 2450 6750 2450
+Wire Wire Line
+	6500 2650 6750 2650
+Wire Wire Line
+	7050 2350 6700 2350
+Wire Wire Line
+	6700 2350 6700 2450
+Connection ~ 6700 2450
+Wire Wire Line
+	7050 2550 6500 2550
+Wire Wire Line
+	6700 2750 6700 2650
+Connection ~ 6700 2650
+Text GLabel 6750 1850 2    60   Input ~ 0
+RST
+$Comp
+L RES-US1206FAB R1
+U 1 1 5ACA491D
+P 6600 1100
+F 0 "R1" H 6450 1159 45  0000 L BNN
+F 1 "10000" H 6450 970 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 6630 1250 20  0001 C CNN
+F 3 "" H 6600 1100 60  0001 C CNN
+	1    6600 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 1850 6750 1850
+Wire Wire Line
+	6600 1750 6600 1850
+Connection ~ 6600 1850
+Text GLabel 6150 850  0    60   Input ~ 0
+VCC
+$Comp
+L Conn_01x04_Female AnalogSensorConn1
+U 1 1 5ACA50C4
+P 8350 5200
+F 0 "AnalogSensorConn1" H 8350 5400 50  0000 C CNN
+F 1 "Conn_01x04_Female_SMD" H 8350 4900 50  0000 C CNN
+F 2 "FabOscar:1X04SMD" H 8350 5200 50  0001 C CNN
+F 3 "" H 8350 5200 50  0001 C CNN
+	1    8350 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 7800 5550 0    60   Input ~ 0
+V_SENS
+Text GLabel 7800 5400 0    60   Input ~ 0
+GND
+Wire Wire Line
+	7800 5550 8150 5550
+Wire Wire Line
+	8150 5550 8150 5400
+Wire Wire Line
+	7800 5400 8050 5400
+Wire Wire Line
+	8050 5400 8050 5300
+Wire Wire Line
+	8050 5300 8150 5300
+Wire Wire Line
+	7800 5250 8000 5250
+Wire Wire Line
+	8000 5250 8000 5200
+Wire Wire Line
+	8000 5200 8150 5200
+Wire Wire Line
+	7850 5100 8150 5100
+Text GLabel 2250 4050 2    60   Input ~ 0
+ADC1_SENS
+Text GLabel 2250 5250 2    60   Input ~ 0
+ADC2_SENS
+Wire Wire Line
+	6700 2750 7050 2750
+Wire Wire Line
+	7050 2750 7050 2700
+Wire Wire Line
+	7050 2700 7100 2700
+Text GLabel 7800 5250 0    60   Input ~ 0
+ADC1_SENS
+Text GLabel 7850 5100 0    60   Input ~ 0
+ADC2_SENS
+$Comp
+L REGULATORSOT23 IC2
+U 1 1 5ACA90E9
+P 2800 7000
+F 0 "IC2" H 2550 6850 45  0000 L BNN
+F 1 "3.3V" H 2850 6850 45  0000 L BNN
+F 2 "FabOscar:fab-SOT23" H 2830 7150 20  0001 C CNN
+F 3 "" H 2800 7000 60  0001 C CNN
+	1    2800 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP-US1206FAB C2
+U 1 1 5ACA91D1
+P 1900 7150
+F 0 "C2" H 1850 7275 45  0000 L BNN
+F 1 "0.1uF" H 1850 6950 45  0000 L BNN
+F 2 "FabOscar:fab-C1206FAB" H 1930 7300 20  0001 C CNN
+F 3 "" H 1900 7150 60  0001 C CNN
+	1    1900 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CAP-US1206FAB C3
+U 1 1 5ACA9261
+P 3450 7150
+F 0 "C3" H 3400 7275 45  0000 L BNN
+F 1 "0.1uF" H 3400 6950 45  0000 L BNN
+F 2 "FabOscar:fab-C1206FAB" H 3480 7300 20  0001 C CNN
+F 3 "" H 3450 7150 60  0001 C CNN
+	1    3450 7150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2600 7500 0    60   Input ~ 0
+GND
+Text GLabel 1650 6900 0    60   Input ~ 0
+VBUS
+Text GLabel 3650 6900 2    60   Input ~ 0
+VCC
+Wire Wire Line
+	1650 6900 2500 6900
+Wire Wire Line
+	1900 6900 1900 6950
+Connection ~ 1900 6900
+Wire Wire Line
+	1900 7250 1900 7350
+Wire Wire Line
+	2800 7500 2600 7500
+Wire Wire Line
+	3100 6900 3650 6900
+Wire Wire Line
+	3450 6950 3450 6900
+Connection ~ 3450 6900
+Wire Wire Line
+	3450 7350 3450 7250
+$Comp
+L Conn_01x04_Female I2C_Conn1
+U 1 1 5ACAA183
+P 6250 4250
+F 0 "I2C_Conn1" H 6250 4450 50  0000 C CNN
+F 1 "I2C_GROVE_SMD" V 6350 4050 50  0000 C CNN
+F 2 "FabOscar:I2C_GROVE" H 6250 4250 50  0001 C CNN
+F 3 "" H 6250 4250 50  0001 C CNN
+	1    6250 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 4750 0    60   Input ~ 0
+GND
+Text GLabel 5550 4600 0    60   Input ~ 0
+VBUS
+Text GLabel 5550 4150 0    60   Input ~ 0
+SDA
+Text GLabel 5550 4000 0    60   Input ~ 0
+SCL
+Wire Wire Line
+	2800 7100 2800 7500
+Connection ~ 2800 7350
+Text GLabel 5000 7000 2    60   Input ~ 0
+V_SENS
+Text Notes 850  6650 0    60   ~ 0
+VOLT REGULATOR
+Wire Notes Line
+	6000 6500 6000 7700
+Wire Notes Line
+	6000 7700 800  7700
+Wire Notes Line
+	800  7700 800  6500
+Text Notes 6450 4800 0    60   ~ 0
+I2C
+Wire Notes Line
+	6650 4850 5200 4850
+Text Notes 8200 5800 0    60   ~ 0
+HEADER_SENSOR
+Wire Notes Line
+	7050 4950 9000 4950
+Wire Notes Line
+	9000 4950 9000 5850
+Wire Notes Line
+	9000 5850 7050 5850
+Wire Notes Line
+	8550 3800 10250 3800
+Wire Notes Line
+	10250 3800 10250 4650
+Wire Notes Line
+	10250 4650 8550 4650
+Wire Notes Line
+	8550 4650 8550 3800
+Text Notes 8600 4600 0    60   ~ 0
+EXT_RESONATOR
+Wire Notes Line
+	6750 4500 8450 4500
+Wire Notes Line
+	8450 4500 8450 3800
+Wire Notes Line
+	8450 3800 6750 3800
+Wire Notes Line
+	6750 3800 6750 4500
+Text Notes 8200 4450 0    60   ~ 0
+ISP
+Text Notes 5000 7450 0    60   ~ 0
+V_SENS
+$Comp
+L RES-US1206FAB R8
+U 1 1 5ACAD4FF
+P 5900 4350
+F 0 "R8" H 5750 4409 45  0000 L BNN
+F 1 "10000" H 5750 4220 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 5930 4500 20  0001 C CNN
+F 3 "" H 5900 4350 60  0001 C CNN
+	1    5900 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L RES-US1206FAB R9
+U 1 1 5ACAD722
+P 5700 4200
+F 0 "R9" H 5550 4259 45  0000 L BNN
+F 1 "10000" H 5550 4070 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 5730 4350 20  0001 C CNN
+F 3 "" H 5700 4200 60  0001 C CNN
+	1    5700 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 4000 6050 4000
+Wire Wire Line
+	6050 4000 6050 4150
+Connection ~ 5700 4000
+Wire Wire Line
+	6050 4450 6050 4750
+Wire Wire Line
+	6050 4750 5550 4750
+Wire Wire Line
+	5550 4600 6000 4600
+Wire Wire Line
+	5900 4600 5900 4550
+Wire Wire Line
+	6050 4350 6000 4350
+Wire Wire Line
+	5700 4400 5700 4600
+Connection ~ 5700 4600
+Wire Wire Line
+	5550 4150 6000 4150
+Wire Wire Line
+	6000 4150 6000 4250
+Wire Wire Line
+	6000 4250 6050 4250
+Connection ~ 5900 4150
+Wire Wire Line
+	6000 4350 6000 4600
+Connection ~ 5900 4600
+Text GLabel 4650 7000 0    60   Input ~ 0
+VBUS
+Wire Wire Line
+	4650 7000 5000 7000
+Text GLabel 2300 2550 0    60   Input ~ 0
+VCC
+Wire Notes Line
+	800  6500 6000 6500
+$Comp
+L RES-US1206FAB R3_1
+U 1 1 5ACBA5CE
+P 1700 4850
+F 0 "R3_1" H 1550 4909 45  0000 L BNN
+F 1 "2200" H 1550 4720 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 1730 5000 20  0001 C CNN
+F 3 "" H 1700 4850 60  0001 C CNN
+	1    1700 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L RES-US1206FAB R2_1
+U 1 1 5ACBA653
+P 1700 4350
+F 0 "R2_1" H 1550 4409 45  0000 L BNN
+F 1 "680" H 1550 4220 45  0000 L BNN
+F 2 "FabOscar:fab_R1206FAB" H 1730 4500 20  0001 C CNN
+F 3 "" H 1700 4350 60  0001 C CNN
+	1    1700 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 4550 1700 4650
+Wire Wire Line
+	6500 3050 7300 3050
+Text GLabel 1600 5050 0    60   Input ~ 0
+GND
+Wire Wire Line
+	1600 5050 1700 5050
+$Comp
+L RES-US1206FAB R3_2
+U 1 1 5ACBAE7B
+P 1750 5950
+F 0 "R3_2" H 1600 6009 45  0000 L BNN
+F 1 "2200" H 1600 5820 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 1780 6100 20  0001 C CNN
+F 3 "" H 1750 5950 60  0001 C CNN
+	1    1750 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RES-US1206FAB R2_2
+U 1 1 5ACBAE81
+P 1750 5500
+F 0 "R2_2" H 1600 5559 45  0000 L BNN
+F 1 "680" H 1600 5370 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 1780 5650 20  0001 C CNN
+F 3 "" H 1750 5500 60  0001 C CNN
+	1    1750 5500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1600 6200 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6500 2950 7350 2950
+Wire Wire Line
+	1750 5750 1750 5700
+Text Notes 7400 7500 0    60   ~ 0
+5V - SENSOR ADC - I2C
+Wire Notes Line
+	5200 4850 5200 3800
+Wire Notes Line
+	5200 3800 6650 3800
+Wire Notes Line
+	6650 3800 6650 4850
+Wire Wire Line
+	1900 7350 3450 7350
+$Comp
+L RES-US1206FAB R1_1
+U 1 1 5ACBD1ED
+P 1900 4050
+F 0 "R1_1" H 1750 4109 45  0000 L BNN
+F 1 "560" H 1750 3920 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 1930 4200 20  0001 C CNN
+F 3 "" H 1900 4050 60  0001 C CNN
+	1    1900 4050
+	-1   0    0    1   
+$EndComp
+Connection ~ 1700 4600
+Text GLabel 1500 4600 0    60   Input ~ 0
+ADC1_ATTINY
+Text GLabel 7400 3150 2    60   Input ~ 0
+ADC1_ATTINY
+Wire Wire Line
+	6500 2850 7400 2850
+Text GLabel 7400 3050 2    60   Input ~ 0
+ADC2_ATTINY
+Text GLabel 1500 5700 0    60   Input ~ 0
+ADC2_ATTINY
+Wire Wire Line
+	1750 5700 1500 5700
+Wire Wire Line
+	1600 6200 1750 6200
+Wire Wire Line
+	1750 6200 1750 6150
+Wire Notes Line
+	7050 5850 7050 4950
+Wire Notes Line
+	750  6400 5050 6400
+Wire Notes Line
+	750  3800 5050 3800
+Wire Notes Line
+	750  3800 750  6400
+Text Notes 3850 6200 0    60   ~ 0
+Step-down level shifter
+Text GLabel 4400 4450 2    60   Input ~ 0
+V_SENS
+$Comp
+L RES-US1206FAB R1_2
+U 1 1 5ACC3ADC
+P 1950 5250
+F 0 "R1_2" H 1800 5309 45  0000 L BNN
+F 1 "560" H 1800 5120 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 1980 5400 20  0001 C CNN
+F 3 "" H 1950 5250 60  0001 C CNN
+	1    1950 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 5250 2250 5250
+Wire Wire Line
+	1700 4050 1700 4150
+Wire Wire Line
+	2100 4050 2250 4050
+Wire Wire Line
+	1500 4600 1700 4600
+$Comp
+L RES-US1206FAB R3_3
+U 1 1 5ACC45AC
+P 3900 5250
+F 0 "R3_3" H 3750 5309 45  0000 L BNN
+F 1 "2200" H 3750 5120 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 3930 5400 20  0001 C CNN
+F 3 "" H 3900 5250 60  0001 C CNN
+	1    3900 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RES-US1206FAB R2_3
+U 1 1 5ACC45B2
+P 3900 4800
+F 0 "R2_3" H 3750 4859 45  0000 L BNN
+F 1 "680" H 3750 4670 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 3930 4950 20  0001 C CNN
+F 3 "" H 3900 4800 60  0001 C CNN
+	1    3900 4800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3750 5500 0    60   Input ~ 0
+GND
+Wire Wire Line
+	3900 5050 3900 5000
+Text GLabel 3650 5000 0    60   Input ~ 0
+VSENS_ATTINY
+Wire Wire Line
+	3900 4450 3900 4600
+Wire Wire Line
+	3900 5000 3650 5000
+Wire Wire Line
+	3750 5500 3900 5500
+Wire Wire Line
+	3900 5500 3900 5450
+$Comp
+L RES-US1206FAB R1_3
+U 1 1 5ACC45BF
+P 4100 4450
+F 0 "R1_3" H 3950 4509 45  0000 L BNN
+F 1 "560" H 3950 4320 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 4130 4600 20  0001 C CNN
+F 3 "" H 4100 4450 60  0001 C CNN
+	1    4100 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 4450 4400 4450
+Wire Notes Line
+	5050 3800 5050 6400
+Text GLabel 7350 3250 2    60   Input ~ 0
+VSENS_ATTINY
+Text GLabel 7050 2200 2    60   Input ~ 0
+LED_PIN
+Wire Wire Line
+	6500 2350 6600 2350
+Wire Wire Line
+	6600 2350 6600 2250
+Wire Wire Line
+	6600 2250 7050 2250
+Wire Wire Line
+	7050 2250 7050 2200
+Text GLabel 6150 5100 0    60   Input ~ 0
+LED_PIN
+$Comp
+L LEDFAB1206 GREEN1
+U 1 1 5ACC6054
+P 6200 5850
+F 0 "GREEN1" V 6305 5770 45  0000 L BNN
+F 1 "IND_LED" V 6390 5770 45  0000 L BNN
+F 2 "FabOscar:fab-LED1206FAB" H 6230 6000 20  0001 C CNN
+F 3 "" H 6200 5850 60  0001 C CNN
+	1    6200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES-US1206FAB R10
+U 1 1 5ACC605A
+P 6200 5400
+F 0 "R10" H 6050 5459 45  0000 L BNN
+F 1 "1000" H 6050 5270 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 6230 5550 20  0001 C CNN
+F 3 "" H 6200 5400 60  0001 C CNN
+	1    6200 5400
+	0    1    1    0   
+$EndComp
+Text GLabel 6000 6050 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6200 5100 6200 5200
+Wire Wire Line
+	6200 5650 6200 5600
+Wire Wire Line
+	6150 5100 6200 5100
+Wire Notes Line
+	5200 6150 6900 6150
+Wire Notes Line
+	6900 6150 6900 4950
+Wire Notes Line
+	6900 4950 5200 4950
+Wire Notes Line
+	5200 4950 5200 6150
+Text Notes 6650 6100 0    60   ~ 0
+LED
+Wire Wire Line
+	1750 5300 1750 5250
+Wire Wire Line
+	6000 6050 6200 6050
+Wire Wire Line
+	6200 6050 6200 5950
+Wire Wire Line
+	3500 2650 3500 2550
+$Comp
+L RES-US1206FAB JM1
+U 1 1 5ACC8FAC
+P 9900 2800
+F 0 "JM1" H 9750 2859 45  0000 L BNN
+F 1 "0" H 9750 2670 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 9930 2950 20  0001 C CNN
+F 3 "" H 9900 2800 60  0001 C CNN
+	1    9900 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L RES-US1206FAB JM2
+U 1 1 5ACC9085
+P 6600 1550
+F 0 "JM2" H 6450 1609 45  0000 L BNN
+F 1 "0" H 6450 1420 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 6630 1700 20  0001 C CNN
+F 3 "" H 6600 1550 60  0001 C CNN
+	1    6600 1550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10100 2800 2    60   Input ~ 0
+GND
+Text GLabel 9650 3100 0    60   Input ~ 0
+GND
+Text GLabel 9700 2800 0    60   Input ~ 0
+GND
+Text GLabel 10050 3100 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6150 850  6600 850 
+Wire Wire Line
+	6600 850  6600 900 
+Wire Wire Line
+	6600 1300 6600 1350
+$Comp
+L RES-US1206FAB JM0
+U 1 1 5ACCA2A4
+P 9850 3100
+F 0 "JM0" H 9700 3159 45  0000 L BNN
+F 1 "0" H 9700 2970 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 9880 3250 20  0001 C CNN
+F 3 "" H 9850 3100 60  0001 C CNN
+	1    9850 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 2550 0    60   Input ~ 0
+SCK
+$Comp
+L RES-US1206FAB JM4
+U 1 1 5ACCA63A
+P 9900 2550
+F 0 "JM4" H 9750 2609 45  0000 L BNN
+F 1 "0" H 9750 2420 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 9930 2700 20  0001 C CNN
+F 3 "" H 9900 2550 60  0001 C CNN
+	1    9900 2550
+	-1   0    0    1   
+$EndComp
+Text GLabel 10100 2550 2    60   Input ~ 0
+SCK
+Text GLabel 8000 2800 2    60   Input ~ 0
+VSENS_ATTINY
+Wire Wire Line
+	6500 2750 6500 2800
+Wire Wire Line
+	6500 2800 7600 2800
+$Comp
+L RES-US1206FAB JM3
+U 1 1 5ACCAA9D
+P 7800 2800
+F 0 "JM3" H 7650 2859 45  0000 L BNN
+F 1 "0" H 7650 2670 45  0000 L BNN
+F 2 "FabOscar:fab-R1206FAB" H 7830 2950 20  0001 C CNN
+F 3 "" H 7800 2800 60  0001 C CNN
+	1    7800 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 3050 7300 3250
+Wire Wire Line
+	7300 3250 7350 3250
+Wire Wire Line
+	7350 2950 7350 3150
+Wire Wire Line
+	7350 3150 7400 3150
+Wire Wire Line
+	7400 2850 7400 3050
+Text GLabel 7600 2800 1    60   Input ~ 0
+VSENS_ATTINY
+$Comp
+L ATTINY44-SSU IC1
+U 1 1 5ACA3A1D
+P 4500 2450
+F 0 "IC1" H 4400 3180 45  0000 L BNN
+F 1 "ATTINY44-SSU" H 4400 1650 45  0000 L BNN
+F 2 "FabOscar:fab-SOIC14" H 4530 2600 20  0001 C CNN
+F 3 "" H 4500 2450 60  0001 C CNN
+	1    4500 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
